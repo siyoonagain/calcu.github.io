@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <title>계산기</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <input type="text" id="display"></input>
+            <input type="text" id="result"></input>
+            <table>
+                <tr>
+                    <td class="cancle" onclick="reset()">C</td>
+                    <td class="revers" onclick="miPlu()">±</td>
+                    <td class="percent" onclick="add('%')">%</td>
+                    <td class="seperate orange_Bg" onclick="add('/')">÷</td>
+                </tr>
+                <tr>
+                    <td onclick="add(7)">7</td>
+                    <td onclick="add(8)">8</td>
+                    <td onclick="add(9)">9</td>
+                    <td class="db orange_Bg" onclick="add('*')">×</td>
+                </tr>
+                <tr>
+                    <td onclick="add(4)">4</td>
+                    <td onclick="add(5)">5</td>
+                    <td onclick="add(6)">6</td>
+                    <td class="min orange_Bg" onclick="add('-')">-</td>
+                </tr>
+                <tr>
+                    <td onclick="add(1)">1</td>
+                    <td onclick="add(2)">2</td>
+                    <td onclick="add(3)">3</td>
+                    <td class="plus orange_Bg" onclick="add('+')">+</td>
+                </tr>
+                <tr>
+                    <td colspan="2" onclick="add(0)">0</td>
+                    <td class="point" onclick="add('.')">.</td>
+                    <td class="eq orange_Bg" onclick="total()">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
